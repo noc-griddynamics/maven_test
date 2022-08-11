@@ -12,6 +12,13 @@
     <module>my-webapp</module>
   </modules>
 
+  <scm>
+   <developerConnection>scm:git:https://github.com/Chernobog666/maven_test.git</developerConnection>
+  </scm>
+
+  <properties>
+    <project.scm.id>github</project.scm.id>  
+  </properties>
   
   <profiles>
     <profile>
@@ -21,8 +28,8 @@
           <name>environment</name>
           <value>test</value>
         </property>
-      </activation>
-  
+      </activation>   
+
       <build>  
         <pluginManagement>
           <plugins>
@@ -53,11 +60,24 @@
                   <phase>package</phase>                
                 </execution>
               </executions>
-            </plugin>        
+            </plugin>
+            <!-- PLUGIN ZA RELEASE -->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-release-plugin</artifactId>
+              <version>3.0.0-M6</version>
+              <configuration>
+                <tagBase>
+                  file:////Users/vdjurovic/centos7/test_java_app/tags
+                </tagBase>
+                <checkModificationExcludes>
+                  <checkModificationExclude>**</checkModificationExclude>
+                </checkModificationExcludes>
+              </configuration>
+            </plugin>
           </plugins>  
         </pluginManagement>
       </build>
-
     </profile>
   </profiles>
 </project>
