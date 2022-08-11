@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>app</artifactId>
+  <version>1.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+ 
+  <modules>
+    <module>my-app</module>
+    <module>my-webapp</module>
+  </modules>
+
+  
+  <profiles>
+    <profile>
+      <id>assemble</id>
+      <activation>
+        <property>
+          <name>environment</name>
+          <value>test</value>
+        </property>
+      </activation>
+  
+      <build>  
+        <pluginManagement>
+          <plugins>
+            <!--ASSEMBLY PLUGIN TEST | ACTIVATES WITH TEST PROFILE-->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>3.4.2</version>
+              <configuration>
+                <descriptors>
+                  <descriptor>/Users/vdjurovic/centos7/test_java_app/assembly/zip.xml</descriptor>
+                  <!--descriptor>${basedir}/assembly/zip.xml</descriptor-->
+                </descriptors>
+                <archive>
+                  <manifest>
+                    <mainClass>com.mycompany.app:my-app</mainClass>
+                    <mainClass>com.mycompany.app:my-webapp</mainClass>
+                  </manifest>
+                </archive>
+                <finalName>standalone</finalName>
+              </configuration>
+              <executions>
+                <execution>
+                  <id>standalone</id>
+                  <goals>
+                      <goal>single</goal>
+                  </goals>
+                  <phase>package</phase>                
+                </execution>
+              </executions>
+            </plugin>        
+          </plugins>  
+        </pluginManagement>
+      </build>
+
+    </profile>
+  </profiles>
+</project>
