@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
  
   <groupId>com.mycompany.app</groupId>
   <artifactId>app</artifactId>
-  <version>1.3-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
  
   <modules>
@@ -11,17 +12,14 @@
     <module>my-webapp</module>
   </modules>
 
-  <!-- Source code management settings-->
   <scm>
    <developerConnection>scm:git:https://github.com/Chernobog666/maven_test.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
 
   <properties>
     <project.scm.id>github</project.scm.id>  
   </properties>
   
-  <!--PROFIL ZA AKTIVACIJU ASSEMBLY-->
   <profiles>
     <profile>
       <id>assemble</id>
@@ -32,19 +30,10 @@
         </property>
       </activation>   
 
-      <build>
-        <!--EXTENZIJA ZA GRADLE
-        <extensions>
-          <extension>
-            <groupId>com.gradle</groupId>
-            <artifactId>gradle-enterprise-maven-extension</artifactId>
-            <version>1.15</version>
-          </extension>
-        </extensions>
-        -->  
+      <build>  
         <pluginManagement>
           <plugins>
-            <!--ASSEMBLY PLUGIN TEST | ACTIVATES WITH ASSEMBLE PROFILE-->
+            <!--ASSEMBLY PLUGIN TEST | ACTIVATES WITH TEST PROFILE-->
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-assembly-plugin</artifactId>
