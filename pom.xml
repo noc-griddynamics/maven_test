@@ -21,6 +21,27 @@
     <project.scm.id>github</project.scm.id>  
   </properties>
   
+
+  <!-- NEXUS REPO SETTINGS -->
+  <repositories>
+    <repository>
+      <id>maven-public</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>            
+  </repositories>
+  
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://your-host:8081/repository/maven-snapshots/</url>
+    </snapshotRepository> 
+  </distributionManagement>
+
+
   <!--PROFIL ZA AKTIVACIJU ASSEMBLY-->
   <profiles>
     <profile>
@@ -51,7 +72,7 @@
               <version>3.4.2</version>
               <configuration>
                 <descriptors>
-                  <descriptor>/Users/vdjurovic/centos7/test_java_app/assembly/zip.xml</descriptor>
+                  <descriptor>/Users/vdjurovic/centos7/java_app_nexus/maven_test/assembly/zip.xml</descriptor>
                   <!--descriptor>${basedir}/assembly/zip.xml</descriptor-->
                 </descriptors>
                 <archive>
@@ -79,11 +100,32 @@
               <version>3.0.0-M6</version>
               <configuration>
                 <tagBase>
-                  file:////Users/vdjurovic/centos7/test_java_app/tags
+                  file:////Users/vdjurovic/centos7/java_app_nexus/maven_test/tags
                 </tagBase>
                 <checkModificationExcludes>
                   <checkModificationExclude>**</checkModificationExclude>
                 </checkModificationExcludes>
+              </configuration>
+            </plugin>
+            <!-- PLUGIN ZA NEXUS -->
+            <plugin>
+              <groupId>org.sonatype.plugins</groupId>
+              <artifactId>nxrm3-maven-plugin</artifactId>
+              <!-- replace plugin version with the latest available -->
+              <!-- https://search.maven.org/search?q=a:nxrm3-maven-plugin -->
+              <version>1.0.3</version>
+              <extensions>true</extensions>
+              <configuration>
+                <nexusUrl>http://localhost:8081</nexusUrl>
+                 
+                <!-- The server "id" element from settings to use authentication from settings.xml-->
+                <serverId>local-nexus</serverId>
+                
+                <!-- Which repository to deploy to -->
+                <repository>maven-releases</repository>
+                 
+                <!-- Skip the staging deploy mojo -->
+                <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
               </configuration>
             </plugin>
           </plugins>  

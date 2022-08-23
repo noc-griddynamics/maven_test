@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.mycompany.app</groupId>
     <artifactId>app</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.3-SNAPSHOT</version>
   </parent>
 
   <groupId>com.mycompany.app</groupId>
@@ -37,6 +37,12 @@
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
       <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.sonatype.plugins</groupId>
+      <artifactId>nxrm3-maven-plugin</artifactId>
+      <version>1.0.3</version>
+      <type>maven-plugin</type>
     </dependency>
   </dependencies>
 

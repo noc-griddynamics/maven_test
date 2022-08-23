@@ -31,12 +31,18 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!-- DODATO -->
     <dependency>
-      <!--Dodato-->
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.12</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.sonatype.plugins</groupId>
+      <artifactId>nxrm3-maven-plugin</artifactId>
+      <version>1.0.3</version>
+      <type>maven-plugin</type>
     </dependency>
   </dependencies>
 
