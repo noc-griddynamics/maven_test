@@ -26,18 +26,18 @@
   <repositories>
     <repository>
       <id>maven-public</id>
-      <url>http://localhost:8081/repository/maven-public/</url>
+      <url>http://localhost:8082/repository/maven-public/</url>
     </repository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://localhost:8081/repository/maven-releases/</url>
+      <url>http://localhost:8082/repository/maven-releases/</url>
     </repository>            
   </repositories>
   
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://your-host:8081/repository/maven-snapshots/</url>
+      <url>http://your-host:8082/repository/maven-snapshots/</url>
     </snapshotRepository> 
   </distributionManagement>
 
@@ -116,7 +116,7 @@
               <version>1.0.3</version>
               <extensions>true</extensions>
               <configuration>
-                <nexusUrl>http://localhost:8081</nexusUrl>
+                <nexusUrl>http://localhost:8082</nexusUrl>
                  
                 <!-- The server "id" element from settings to use authentication from settings.xml-->
                 <serverId>local-nexus</serverId>
