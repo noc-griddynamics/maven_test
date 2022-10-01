@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.mycompany.app</groupId>
     <artifactId>app</artifactId>
-    <version>1.6</version>
+    <version>1.6-SNAPSHOT</version>
   </parent>
 
   <groupId>com.mycompany.app</groupId>
@@ -35,7 +35,7 @@
     <dependency>
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
-      <version>1.6</version>
+      <version>1.6-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.sonatype.plugins</groupId>
