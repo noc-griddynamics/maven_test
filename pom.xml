@@ -103,7 +103,7 @@
                   file:////Users/vdjurovic/centos7/java_app_nexus/maven_test/tags
                 </tagBase>
                 <checkModificationExcludes>
-                  <checkModificationExclude>pom.xml</checkModificationExclude>
+                  <checkModificationExclude>**</checkModificationExclude>
                   <!--checkModificationExclude>**</checkModificationExclude-->
                 </checkModificationExcludes>
               </configuration>
