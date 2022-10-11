@@ -3,7 +3,7 @@
  
   <groupId>com.mycompany.app</groupId>
   <artifactId>app</artifactId>
-  <version>1.10</version>
+  <version>1.11-SNAPSHOT</version>
   <packaging>pom</packaging>
  
   <modules>
@@ -14,7 +14,7 @@
   <!-- Source code management settings-->
   <scm>
    <developerConnection>scm:git:https://github.com/Chernobog666/maven_test.git</developerConnection>
-    <tag>app-1.10</tag>
+    <tag>app-1.8</tag>
   </scm>
 
   <properties>
