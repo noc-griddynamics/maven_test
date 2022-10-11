@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.AppTest" time="0.011" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/test-classes:/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/classes:/Users/vdjurovic/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/vdjurovic/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/vdjurovic/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar:/Users/vdjurovic/.m2/repository/org/sonatype/plugins/nxrm3-maven-plugin/1.0.3/nxrm3-maven-plugin-1.0.3.jar:/Users/vdjurovic/.m2/repository/com/sonatype/nexus/nexus-platform-api/3.4.20181205-180005.1567c7b/nexus-platform-api-3.4.20181205-180005.1567c7b.jar:/Users/vdjurovic/.m2/repository/org/sonatype/nexus/maven/nexus-common/1.6.8/nexus-common-1.6.8.jar:/Users/vdjurovic/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar:/Users/vdjurovic/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/surefire/surefirebooter15692279777231994216.jar /Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/surefire 2022-10-11T10-10-31_356-jvmRun1 surefire6263568319868873635tmp surefire_017424191465952040936tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/test-classes:/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/classes:/Users/vdjurovic/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/vdjurovic/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/vdjurovic/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar:/Users/vdjurovic/.m2/repository/org/sonatype/plugins/nxrm3-maven-plugin/1.0.3/nxrm3-maven-plugin-1.0.3.jar:/Users/vdjurovic/.m2/repository/com/sonatype/nexus/nexus-platform-api/3.4.20181205-180005.1567c7b/nexus-platform-api-3.4.20181205-180005.1567c7b.jar:/Users/vdjurovic/.m2/repository/org/sonatype/nexus/maven/nexus-common/1.6.8/nexus-common-1.6.8.jar:/Users/vdjurovic/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar:/Users/vdjurovic/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/vdjurovic"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app/target/surefire/surefirebooter15692279777231994216.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.2+9-61"/>
+    <property name="user.name" value="vdjurovic"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/vdjurovic/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/jd/wg2f9c050dj4pg7blwg16bwh0000gn/T/"/>
+    <property name="java.version" value="18.0.2"/>
+    <property name="user.dir" value="/Users/vdjurovic/centos7/java_app_nexus/maven_test/my-app"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/vdjurovic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.2+9-61"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="com.mycompany.app.AppTest" time="0.002"/>
+</testsuite>
